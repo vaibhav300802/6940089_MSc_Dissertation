@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nhs-rtt-msc-project"
+version = "0.1.0"
+description = "NHS RTT MSc Data Science forecasting, explainability, optimisation, and dashboard project."
+requires-python = ">=3.10,<3.12"
+
+[tool.setuptools]
+packages = ["nhs_rtt_pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"

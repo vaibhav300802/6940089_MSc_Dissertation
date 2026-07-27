@@ -1,0 +1,5 @@
+comparison,n_pairs,mean_abs_error_difference_comparator_minus_tcn,median_abs_error_difference_comparator_minus_tcn,tcn_better_pair_count,tcn_worse_pair_count,tie_count,tcn_better_pair_pct,two_sided_sign_test_p_value,interpretation
+TCN_vs_naive_last_value,39154,-126.82971813976872,-22.431018829345703,14480,24674,0,36.98217295806303,0.0,Comparator has lower absolute error on average
+TCN_vs_seasonal_naive_12m,39154,9.49622556968626,2.405550003051758,20265,18889,0,51.75716401900189,3.663837433692834e-12,TCN has lower absolute error on average
+TCN_vs_historical_seasonal_mean,39154,294.3789323174004,69.9586683000837,26060,13094,0,66.55769525463555,0.0,TCN has lower absolute error on average
+TCN_vs_hist_gradient_boosting,39154,-92.76650215063056,-18.27128305199939,14876,24278,0,37.99356387597691,0.0,Comparator has lower absolute error on average

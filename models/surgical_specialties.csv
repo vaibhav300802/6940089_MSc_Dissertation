@@ -1,0 +1,22 @@
+specialty_code,specialty_inclusion_criteria,configured_use
+100,Included: General Surgery treatment function commonly includes operative admitted pathways.,decision_to_admit_capacity_simulation
+101,Included: Urology treatment function commonly includes operative admitted pathways.,decision_to_admit_capacity_simulation
+102,Included: Transplantation Surgery treatment function.,decision_to_admit_capacity_simulation
+103,Included: Breast Surgery treatment function.,decision_to_admit_capacity_simulation
+104,Included: Colorectal Surgery treatment function.,decision_to_admit_capacity_simulation
+105,Included: Hepatobiliary and Pancreatic Surgery treatment function.,decision_to_admit_capacity_simulation
+106,Included: Upper Gastrointestinal Surgery treatment function.,decision_to_admit_capacity_simulation
+107,Included: Vascular Surgery treatment function.,decision_to_admit_capacity_simulation
+108,Included: Spinal Surgery treatment function.,decision_to_admit_capacity_simulation
+110,Included: Trauma and Orthopaedics treatment function commonly includes admitted operative pathways.,decision_to_admit_capacity_simulation
+120,"Included: Ear, Nose and Throat treatment function commonly includes operative pathways.",decision_to_admit_capacity_simulation
+130,Included: Ophthalmology treatment function commonly includes operative pathways.,decision_to_admit_capacity_simulation
+140,Included: Oral Surgery treatment function.,decision_to_admit_capacity_simulation
+145,Included: Oral and Maxillofacial Surgery treatment function.,decision_to_admit_capacity_simulation
+150,Included: Neurosurgery treatment function.,decision_to_admit_capacity_simulation
+160,Included: Plastic Surgery treatment function.,decision_to_admit_capacity_simulation
+170,Included: Cardiothoracic Surgery treatment function.,decision_to_admit_capacity_simulation
+171,Included: Paediatric Surgery treatment function.,decision_to_admit_capacity_simulation
+172,Included: Cardiac Surgery treatment function.,decision_to_admit_capacity_simulation
+173,Included: Thoracic Surgery treatment function.,decision_to_admit_capacity_simulation
+502,Included: Gynaecology treatment function has admitted operative pathways.,decision_to_admit_capacity_simulation

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "assumption_label": "Hypothetical scenario parameters for dissertation optimisation. These are not observed NHS productivity, staffing, bed, or cost facts unless separately replaced with sourced local data.",
+  "session_unit_label": "simulated additional treatment session",
+  "default_available_sessions": 5000,
+  "default_max_sessions_per_trust_specialty_month": 12,
+  "default_session_cost": 1.0,
+  "capacity_budgets": [500, 2500, 5000, 10000, 25000, 50000],
+  "productivity_scenarios": {
+    "low": {
+      "default_patients_completed_per_session": 5.0,
+      "specialty_overrides": {
+        "100": 5.0,
+        "110": 4.0,
+        "130": 7.0,
+        "502": 5.0
+      }
+    },
+    "central": {
+      "default_patients_completed_per_session": 8.0,
+      "specialty_overrides": {
+        "100": 8.0,
+        "110": 6.0,
+        "130": 10.0,
+        "502": 7.0
+      }
+    },
+    "high": {
+      "default_patients_completed_per_session": 11.0,
+      "specialty_overrides": {
+        "100": 11.0,
+        "110": 8.0,
+        "130": 14.0,
+        "502": 10.0
+      }
+    }
+  },
+  "specialty_priority_weights": {
+    "default": 1.0,
+    "100": 1.0,
+    "110": 1.1,
+    "130": 1.05,
+    "502": 1.0
+  },
+  "specialty_session_costs": {
+    "default": 1.0,
+    "100": 1.0,
+    "110": 1.2,
+    "130": 0.9,
+    "502": 1.0
+  },
+  "objective_weights": {
+    "remaining_backlog": 1.0,
+    "long_wait_backlog": 0.0,
+    "weighted_backlog": 0.0,
+    "trust_inequality": 0.0,
+    "capacity_cost": 0.001
+  }
+}

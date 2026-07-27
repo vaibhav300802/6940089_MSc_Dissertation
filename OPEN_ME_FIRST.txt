@@ -1,0 +1,38 @@
+NHS RTT MSc Data Science Project
+
+Start here:
+
+1. Read README.md in this folder.
+2. Create an environment and install dependencies:
+   - python -m venv .venv
+   - .venv\Scripts\activate    (Windows)
+   - source .venv/bin/activate  (Mac/Linux)
+   - python -m pip install -r requirements.txt
+3. Quick smoke test:
+   - python run_pipeline.py validate --smoke-test
+4. One-command pipeline:
+   - python run_pipeline.py all
+5. Or run the Colab notebooks in this order:
+   - colab_notebooks/layer1_nhs_rtt_tcn_colab.ipynb
+   - colab_notebooks/layer1c_nhs_rtt_rolling_origin_validation_colab.ipynb
+   - optional: colab_notebooks/layer1b_nhs_rtt_covid_shock_experiment_colab.ipynb
+   - colab_notebooks/layer2_nhs_rtt_tcn_shap_colab.ipynb
+   - colab_notebooks/layer3_nhs_rtt_lp_optimisation_colab.ipynb
+6. Run: python validate_project.py
+7. Run: python dashboard/startup_validation.py
+8. Launch the dashboard:
+   - Windows: run_dashboard.bat
+   - Mac/Linux/Colab terminal: bash run_dashboard.sh
+
+Canonical generated files are stored in:
+- data/processed/
+- models/
+- outputs/
+- outputs/logs/
+- outputs/run_summaries/
+
+Central configuration:
+- config/pipeline_config.json
+
+The complete Streamlit app is in:
+dashboard/app.py

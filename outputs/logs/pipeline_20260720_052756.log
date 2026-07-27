@@ -1,0 +1,7 @@
+2026-07-20 05:28:01,039 INFO Loaded central settings from C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\config\pipeline_config.json
+2026-07-20 05:28:01,039 INFO Seed report: {"python_random_seed": 42, "numpy_random_seed": 42, "pythonhashseed": "42", "torch_available": true, "torch_seed": 42, "deterministic_torch_requested": false, "deterministic_torch_applied": false, "limitations": ["GPU kernels, data-loader workers, and external solver implementations may still introduce small non-determinism."]}
+2026-07-20 05:28:01,040 INFO Starting stage command for optimise: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe colab_notebooks/layer3_nhs_rtt_lp_optimisation_colab.py
+2026-07-20 05:35:24,880 INFO Completed stage command for optimise
+2026-07-20 05:35:24,881 INFO Stage optimise finished in 443.8 seconds
+2026-07-20 05:35:26,310 INFO Run summary written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\run_summaries\run_summary_20260720_052756.json
+2026-07-20 05:35:26,311 INFO Log file written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\logs\pipeline_20260720_052756.log

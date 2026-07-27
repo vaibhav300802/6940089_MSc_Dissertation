@@ -1,0 +1,76 @@
+The dashboard reads generated outputs from the canonical project folders:
+
+- data/processed/rtt_clean.parquet
+- models/tcn_state_dict.pt
+- models/tcn_dta_state_dict.pt
+- models/model_config.json
+- models/dta_model_config.json
+- models/feature_metadata.json
+- models/dta_feature_metadata.json
+- models/data_dictionary.csv
+- models/surgical_specialties.csv
+- outputs/backtest_predictions.parquet
+- outputs/future_forecasts.parquet
+- outputs/future_optimisation_forecasts.parquet
+- outputs/forecast_metrics.csv
+- outputs/data_quality_report.csv
+- outputs/data_quality_summary.md
+- outputs/missingness_by_series.csv
+- outputs/trust_identifier_changes.csv
+- outputs/model_comparison_predictions.parquet
+- outputs/model_comparison.csv
+- outputs/model_comparison_by_horizon.csv
+- outputs/model_comparison_by_specialty.csv
+- outputs/model_comparison_by_trust_size.csv
+- outputs/model_comparison_by_covid_period.csv
+- outputs/model_comparison_paired_error_analysis.csv
+- outputs/model_comparison_summary.md
+- outputs/model_comparison_plots/overall_model_comparison.png
+- outputs/model_comparison_plots/mae_by_horizon.png
+- outputs/model_comparison_plots/tcn_vs_seasonal_naive_abs_error.png
+- outputs/rolling_origin_validation/rolling_origin_predictions.parquet
+- outputs/rolling_origin_validation/rolling_origin_metrics_overall.csv
+- outputs/rolling_origin_validation/rolling_origin_metrics_by_origin.csv
+- outputs/rolling_origin_validation/rolling_origin_metrics_by_horizon.csv
+- outputs/rolling_origin_validation/rolling_origin_metrics_by_trust.csv
+- outputs/rolling_origin_validation/rolling_origin_metrics_by_specialty.csv
+- outputs/rolling_origin_validation/rolling_origin_metrics_by_waiting_size_group.csv
+- outputs/rolling_origin_validation/rolling_origin_reliability_summary.csv
+- outputs/rolling_origin_validation/rolling_origin_quantile_crossing_report.csv
+- outputs/rolling_origin_validation/rolling_origin_summary.md
+- outputs/rolling_origin_validation/calibration_expected_vs_empirical.png
+- outputs/rolling_origin_validation/interval_width_vs_coverage.png
+- outputs/part2a_coverage_report.csv
+- outputs/net_inflow_data_quality_summary.csv
+- outputs/rtt_flow_reconciliation_quality_report.json
+- outputs/shap_values.npy
+- outputs/shap_values_long.parquet
+- outputs/shap_feature_groups.json
+- outputs/shap_global_feature_importance.csv
+- outputs/shap_horizon_feature_importance.csv
+- outputs/shap_group_importance.csv
+- outputs/shap_local_trust_specialty_explanations.parquet
+- outputs/shap_local_consistency_report.csv
+- outputs/shap_audit_log.csv
+- outputs/shap_methodology_note.md
+- outputs/shap_global_summary.png
+- outputs/shap_trust_interpretations.csv
+- outputs/shap_trust_{trust_name}.png
+- outputs/lp_allocation_output.csv
+- outputs/lp_sensitivity.png
+- outputs/lp_uncertainty_comparison.csv
+- outputs/lp_covid_stress_test.csv
+
+Only optional dashboard-specific files belong here.
+
+Do not put backtest_predictions.parquet in place of future_forecasts.parquet.
+The general future file must contain latest_observed_waiting_list and must not contain actual.
+The optimisation future file must contain latest_observed_incomplete_decision_to_admit and forecast_target=incomplete_decision_to_admit.
+
+Optional map coordinates:
+
+- dashboard/data/nhs_trust_coordinates.csv
+
+Recommended coordinate columns:
+
+trust_code,trust_name,latitude,longitude

@@ -1,0 +1,60 @@
+feature,feature_group,description,signed,missing_allowed
+month_cos,calendar effects,Model feature derived from the reported RTT monthly panel.,False,True
+month_sin,calendar effects,Model feature derived from the reported RTT monthly panel.,False,True
+time_idx,calendar effects,Model feature derived from the reported RTT monthly panel.,False,True
+completed_admitted,completed-pathway throughput,Model feature derived from the reported RTT monthly panel.,False,True
+completed_admitted_missing,completed-pathway throughput,Indicator equal to 1 when completed_admitted is unavailable for that row.,False,False
+completed_non_admitted,completed-pathway throughput,Model feature derived from the reported RTT monthly panel.,False,True
+completed_non_admitted_missing,completed-pathway throughput,Indicator equal to 1 when completed_non_admitted is unavailable for that row.,False,False
+completed_total,completed-pathway throughput,Reported admitted plus non-admitted completed RTT pathways in the month.,False,True
+completed_total_lag1,completed-pathway throughput,Lagged reported accounting component: completed_total from an earlier month in the same Trust-specialty series.,False,True
+completed_total_lag1_missing,completed-pathway throughput,Indicator equal to 1 when completed_total_lag1 is unavailable for that row.,False,False
+completed_total_lag3,completed-pathway throughput,Lagged reported accounting component: completed_total from an earlier month in the same Trust-specialty series.,False,True
+completed_total_lag3_missing,completed-pathway throughput,Indicator equal to 1 when completed_total_lag3 is unavailable for that row.,False,False
+completed_total_lag6,completed-pathway throughput,Lagged reported accounting component: completed_total from an earlier month in the same Trust-specialty series.,False,True
+completed_total_lag6_missing,completed-pathway throughput,Indicator equal to 1 when completed_total_lag6 is unavailable for that row.,False,False
+completed_total_missing,completed-pathway throughput,Indicator equal to 1 when completed_total is unavailable for that row.,False,False
+completed_admitted_imputed,data availability,Indicator equal to 1 when completed_admitted was imputed by the variable-specific missing-data rule.,False,False
+completed_non_admitted_imputed,data availability,Indicator equal to 1 when completed_non_admitted was imputed by the variable-specific missing-data rule.,False,False
+flow_components_missing,data availability,Indicator equal to 1 when flow_components is unavailable for that row.,False,False
+is_imputed_month,data availability,Model feature derived from the reported RTT monthly panel.,False,True
+missing_month,data availability,Indicator equal to 1 when a Trust-specialty month was inserted during continuity completion because no source publication row was present.,False,False
+new_rtt_periods_imputed,data availability,Indicator equal to 1 when new_rtt_periods was imputed by the variable-specific missing-data rule.,False,False
+waiting_list_imputed,data availability,Indicator equal to 1 when waiting_list was imputed by the variable-specific missing-data rule.,False,False
+waiting_list_with_dta_imputed,data availability,Indicator equal to 1 when waiting_list_with_dta was imputed by the variable-specific missing-data rule.,False,False
+source_file_count,data provenance,Number of distinct source CSV files contributing to the processed Trust-specialty-month row.,False,False
+source_row_count,data provenance,Number of parsed source rows contributing to the processed Trust-specialty-month row before aggregation.,False,False
+reconciliation_error,data quality,Difference between the reconstructed closing waiting list and the reported closing waiting list after applying the residual accounting term.,True,True
+net_inflow,referral or clock-start pressure,Backward-compatible alias of reported_net_inflow.,True,True
+new_rtt_periods,referral or clock-start pressure,Reported new RTT periods or clock starts in the month.,False,True
+new_rtt_periods_lag1,referral or clock-start pressure,Lagged reported accounting component: new_rtt_periods from an earlier month in the same Trust-specialty series.,False,True
+new_rtt_periods_lag1_missing,referral or clock-start pressure,Indicator equal to 1 when new_rtt_periods_lag1 is unavailable for that row.,False,False
+new_rtt_periods_lag3,referral or clock-start pressure,Lagged reported accounting component: new_rtt_periods from an earlier month in the same Trust-specialty series.,False,True
+new_rtt_periods_lag3_missing,referral or clock-start pressure,Indicator equal to 1 when new_rtt_periods_lag3 is unavailable for that row.,False,False
+new_rtt_periods_lag6,referral or clock-start pressure,Lagged reported accounting component: new_rtt_periods from an earlier month in the same Trust-specialty series.,False,True
+new_rtt_periods_lag6_missing,referral or clock-start pressure,Indicator equal to 1 when new_rtt_periods_lag6 is unavailable for that row.,False,False
+new_rtt_periods_missing,referral or clock-start pressure,Indicator equal to 1 when new_rtt_periods is unavailable for that row.,False,False
+reported_net_inflow,referral or clock-start pressure,Reported new RTT periods minus reported completed RTT pathways for the month.,True,True
+reported_net_inflow_lag1,referral or clock-start pressure,Lagged reported accounting component: reported_net_inflow from an earlier month in the same Trust-specialty series.,True,True
+reported_net_inflow_lag1_missing,referral or clock-start pressure,Indicator equal to 1 when reported_net_inflow_lag1 is unavailable for that row.,False,False
+reported_net_inflow_lag3,referral or clock-start pressure,Lagged reported accounting component: reported_net_inflow from an earlier month in the same Trust-specialty series.,True,True
+reported_net_inflow_lag3_missing,referral or clock-start pressure,Indicator equal to 1 when reported_net_inflow_lag3 is unavailable for that row.,False,False
+reported_net_inflow_lag6,referral or clock-start pressure,Lagged reported accounting component: reported_net_inflow from an earlier month in the same Trust-specialty series.,True,True
+reported_net_inflow_lag6_missing,referral or clock-start pressure,Indicator equal to 1 when reported_net_inflow_lag6 is unavailable for that row.,False,False
+reported_net_inflow_missing,referral or clock-start pressure,Indicator equal to 1 when reported_net_inflow is unavailable for that row.,False,False
+unreported_removals,unreported removals,Residual accounting term from opening waiting list plus new RTT periods minus completed pathways minus closing waiting list.,True,True
+unreported_removals_lag1,unreported removals,Lagged reported accounting component: unreported_removals from an earlier month in the same Trust-specialty series.,True,True
+unreported_removals_lag1_missing,unreported removals,Indicator equal to 1 when unreported_removals_lag1 is unavailable for that row.,False,False
+unreported_removals_lag3,unreported removals,Lagged reported accounting component: unreported_removals from an earlier month in the same Trust-specialty series.,True,True
+unreported_removals_lag3_missing,unreported removals,Indicator equal to 1 when unreported_removals_lag3 is unavailable for that row.,False,False
+unreported_removals_lag6,unreported removals,Lagged reported accounting component: unreported_removals from an earlier month in the same Trust-specialty series.,True,True
+unreported_removals_lag6_missing,unreported removals,Indicator equal to 1 when unreported_removals_lag6 is unavailable for that row.,False,False
+unreported_removals_missing,unreported removals,Indicator equal to 1 when unreported_removals is unavailable for that row.,False,False
+closing_waiting_list,waiting-list history,Current month's reported RTT waiting-list size for the Trust-specialty series.,False,True
+closing_waiting_list_missing,waiting-list history,Indicator equal to 1 when closing_waiting_list is unavailable for that row.,False,False
+incomplete_decision_to_admit,waiting-list history,Reported incomplete RTT pathways with a decision to admit from Part 2A.,False,True
+incomplete_total,waiting-list history,Reported total incomplete RTT pathways from Part 2.,False,True
+opening_waiting_list,waiting-list history,Previous month's reported closing RTT waiting-list size within the same Trust-specialty series.,False,True
+opening_waiting_list_missing,waiting-list history,Indicator equal to 1 when opening_waiting_list is unavailable for that row.,False,False
+waiting_list,waiting-list history,Model feature derived from the reported RTT monthly panel.,False,True
+waiting_list_with_dta,waiting-list history,Model feature derived from the reported RTT monthly panel.,False,True

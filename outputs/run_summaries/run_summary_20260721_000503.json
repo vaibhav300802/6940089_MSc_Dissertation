@@ -1,0 +1,189 @@
+{
+  "project_root": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project",
+  "status": "ok",
+  "started_at": "2026-07-21T00:05:03",
+  "finished_at": "2026-07-21T00:05:22",
+  "stages_completed": [
+    "smoke-test"
+  ],
+  "files_produced": [
+    "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\run_summaries\\effective_settings_20260721_000503.json"
+  ],
+  "schema_report": [
+    {
+      "artifact": "processed RTT data",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\data\\processed\\rtt_clean.parquet",
+      "required_for_dashboard": true,
+      "exists": true,
+      "status": "ok",
+      "row_count": 489914,
+      "date_range": "month:2015-10-01..2026-05-01",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "backtest predictions",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\backtest_predictions.parquet",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 36540,
+      "date_range": "forecast_month:2025-06-01..2026-05-01; forecast_origin:2025-05-01..2025-05-01",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "future forecasts",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\future_forecasts.parquet",
+      "required_for_dashboard": true,
+      "exists": true,
+      "status": "ok",
+      "row_count": 41100,
+      "date_range": "forecast_month:2026-06-01..2027-05-01; forecast_origin:2026-05-01..2026-05-01",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "future Part 2A optimisation forecasts",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\future_optimisation_forecasts.parquet",
+      "required_for_dashboard": true,
+      "exists": true,
+      "status": "ok",
+      "row_count": 19788,
+      "date_range": "forecast_month:2026-06-01..2027-05-01; forecast_origin:2026-05-01..2026-05-01",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "forecast metrics",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\forecast_metrics.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 7,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "model comparison",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\model_comparison.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 5,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "model comparison by horizon",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\model_comparison_by_horizon.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 60,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "model comparison by specialty",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\model_comparison_by_specialty.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 115,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "SHAP global feature importance",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\shap_global_feature_importance.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 161,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "SHAP grouped feature importance",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\shap_group_importance.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 18,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "SHAP local explanations",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\shap_local_trust_specialty_explanations.parquet",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 1800,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "optimisation allocation",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\lp_allocation_output.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 19788,
+      "date_range": "forecast_month:2026-06-01..2027-05-01",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "data quality report",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\data_quality_report.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 469,
+      "date_range": "month:2016-04-01..2026-04-01",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "missingness by series",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\missingness_by_series.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 6445,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    },
+    {
+      "artifact": "trust identifier changes",
+      "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\trust_identifier_changes.csv",
+      "required_for_dashboard": false,
+      "exists": true,
+      "status": "ok",
+      "row_count": 125,
+      "date_range": "",
+      "missing_columns": "",
+      "warning": ""
+    }
+  ],
+  "warnings": [
+    "GPU kernels, data-loader workers, and external solver implementations may still introduce small non-determinism."
+  ],
+  "smoke_summary": {
+    "mode": "smoke-test",
+    "tests": "unittest discover completed",
+    "existing_artifacts_checked": 15,
+    "existing_artifacts_ok": 15,
+    "missing_artifacts": 0
+  }
+}

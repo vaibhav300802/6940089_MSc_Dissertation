@@ -1,0 +1,19 @@
+horizon,feature_group,mean_abs_shap
+1,waiting-list lags,344.7538671364468
+1,trust and specialty identifiers or embeddings,109.75833708054772
+1,referral or new RTT-period features,26.81573123708524
+1,calendar features,26.27512638358705
+1,unreported-removal features,12.171517927547624
+1,completed-pathway features,7.171408523011262
+6,waiting-list lags,357.16104892255174
+6,trust and specialty identifiers or embeddings,126.85507971186449
+6,calendar features,39.5182795608979
+6,referral or new RTT-period features,28.58559938544089
+6,unreported-removal features,13.42031554674464
+6,completed-pathway features,7.459268468530551
+12,waiting-list lags,360.8217260537375
+12,trust and specialty identifiers or embeddings,140.42921935654454
+12,calendar features,47.90200490442056
+12,referral or new RTT-period features,29.184334297741948
+12,unreported-removal features,13.518278728587608
+12,completed-pathway features,7.594350767505634

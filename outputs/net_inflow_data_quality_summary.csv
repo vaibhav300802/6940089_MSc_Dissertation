@@ -1,0 +1,2 @@
+min_net_inflow,max_net_inflow,missing_observations,missing_observations_pct,negative_observations,negative_observations_pct,zero_observations,zero_observations_pct,positive_observations,positive_observations_pct,total_observations
+-4650.0,12505.0,169884,34.676290124389176,92518,18.88453891907559,3495,0.7133905134370522,224017,45.725780443098174,489914

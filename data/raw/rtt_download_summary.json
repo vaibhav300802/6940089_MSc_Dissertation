@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-07-16T06:27:17",
+  "source_page": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times",
+  "manifest_path": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\data\\raw\\rtt_full_csv_manifest.csv",
+  "zip_directory": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\data\\raw\\zips",
+  "files": 128,
+  "downloaded_files": 128,
+  "existing_files": 0,
+  "total_size_bytes": 437543849,
+  "first_period": null,
+  "latest_period": null,
+  "all_zip_files_valid": true,
+  "skipped_pages": []
+}

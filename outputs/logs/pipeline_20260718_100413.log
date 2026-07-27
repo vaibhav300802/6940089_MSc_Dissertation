@@ -1,0 +1,5 @@
+2026-07-18 10:04:15,500 INFO Loaded central settings from C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\config\pipeline_config.json
+2026-07-18 10:04:15,500 INFO Seed report: {"python_random_seed": 42, "numpy_random_seed": 42, "pythonhashseed": "42", "torch_available": true, "torch_seed": 42, "deterministic_torch_requested": false, "deterministic_torch_applied": false, "limitations": ["GPU kernels, data-loader workers, and external solver implementations may still introduce small non-determinism."]}
+2026-07-18 10:04:15,502 INFO Starting stage command for explain: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe colab_notebooks/layer2_nhs_rtt_tcn_shap_colab.py
+2026-07-18 14:18:37,757 INFO Run summary written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\run_summaries\run_summary_20260718_100413.json
+2026-07-18 14:18:37,762 INFO Log file written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\logs\pipeline_20260718_100413.log

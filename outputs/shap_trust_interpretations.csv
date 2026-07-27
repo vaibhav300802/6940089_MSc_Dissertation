@@ -1,0 +1,7 @@
+trust_code,trust_name,horizon,interpretation
+R0A,MANCHESTER UNIVERSITY NHS FOUNDATION TRUST,12,"For Trust MANCHESTER UNIVERSITY NHS FOUNDATION TRUST, waiting-list history was associated with a higher model forecast in the selected explanation rows."
+RAJ,MID AND SOUTH ESSEX NHS FOUNDATION TRUST,12,"For Trust MID AND SOUTH ESSEX NHS FOUNDATION TRUST, trust and specialty identifiers or embeddings contributed positively to the selected model prediction."
+RM3,NORTHERN CARE ALLIANCE NHS FOUNDATION TRUST,12,"For Trust NORTHERN CARE ALLIANCE NHS FOUNDATION TRUST, waiting-list history was associated with a higher model forecast in the selected explanation rows."
+R1H,BARTS HEALTH NHS TRUST,12,"For Trust BARTS HEALTH NHS TRUST, waiting-list history was associated with a higher model forecast in the selected explanation rows."
+RAL,ROYAL FREE LONDON NHS FOUNDATION TRUST,12,"For Trust ROYAL FREE LONDON NHS FOUNDATION TRUST, waiting-list history was associated with a higher model forecast in the selected explanation rows."
+RA2,ROYAL SURREY COUNTY HOSPITAL NHS FOUNDATION TRUST,12,"For Trust ROYAL SURREY COUNTY HOSPITAL NHS FOUNDATION TRUST, waiting-list history was associated with a higher model forecast in the selected explanation rows."

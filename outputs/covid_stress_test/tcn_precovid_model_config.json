@@ -1,0 +1,18 @@
+{
+  "model_class": "TCNQuantileRegressor",
+  "format": "manual_pytorch_tcn_state_dict",
+  "n_features": 38,
+  "n_trusts": 500,
+  "n_specialties": 24,
+  "prediction_length": 1,
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "hidden_channels": 64,
+  "tcn_levels": 4,
+  "kernel_size": 3,
+  "dropout": 0.15,
+  "embedding_dim": 12
+}

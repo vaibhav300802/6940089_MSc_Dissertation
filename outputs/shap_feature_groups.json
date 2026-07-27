@@ -1,0 +1,1451 @@
+[
+  {
+    "feature_name": "total_waiting__lag_00",
+    "display_name": "total_waiting",
+    "raw_column": "waiting_list",
+    "model_column": "waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "total_waiting__lag_01",
+    "display_name": "total_waiting",
+    "raw_column": "waiting_list",
+    "model_column": "waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "total_waiting__lag_02",
+    "display_name": "total_waiting",
+    "raw_column": "waiting_list",
+    "model_column": "waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "incomplete_total__lag_00",
+    "display_name": "incomplete_total",
+    "raw_column": "incomplete_total",
+    "model_column": "incomplete_total_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "incomplete_total__lag_01",
+    "display_name": "incomplete_total",
+    "raw_column": "incomplete_total",
+    "model_column": "incomplete_total_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "incomplete_total__lag_02",
+    "display_name": "incomplete_total",
+    "raw_column": "incomplete_total",
+    "model_column": "incomplete_total_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "opening_waiting_list__lag_00",
+    "display_name": "opening_waiting_list",
+    "raw_column": "opening_waiting_list",
+    "model_column": "opening_waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "opening_waiting_list__lag_01",
+    "display_name": "opening_waiting_list",
+    "raw_column": "opening_waiting_list",
+    "model_column": "opening_waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "opening_waiting_list__lag_02",
+    "display_name": "opening_waiting_list",
+    "raw_column": "opening_waiting_list",
+    "model_column": "opening_waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "closing_waiting_list__lag_00",
+    "display_name": "closing_waiting_list",
+    "raw_column": "closing_waiting_list",
+    "model_column": "closing_waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "closing_waiting_list__lag_01",
+    "display_name": "closing_waiting_list",
+    "raw_column": "closing_waiting_list",
+    "model_column": "closing_waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "closing_waiting_list__lag_02",
+    "display_name": "closing_waiting_list",
+    "raw_column": "closing_waiting_list",
+    "model_column": "closing_waiting_list_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods__lag_00",
+    "display_name": "new_rtt_periods",
+    "raw_column": "new_rtt_periods",
+    "model_column": "new_rtt_periods_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods__lag_01",
+    "display_name": "new_rtt_periods",
+    "raw_column": "new_rtt_periods",
+    "model_column": "new_rtt_periods_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods__lag_02",
+    "display_name": "new_rtt_periods",
+    "raw_column": "new_rtt_periods",
+    "model_column": "new_rtt_periods_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "total_completed_pathways__lag_00",
+    "display_name": "total_completed_pathways",
+    "raw_column": "completed_total",
+    "model_column": "completed_total_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "total_completed_pathways__lag_01",
+    "display_name": "total_completed_pathways",
+    "raw_column": "completed_total",
+    "model_column": "completed_total_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "total_completed_pathways__lag_02",
+    "display_name": "total_completed_pathways",
+    "raw_column": "completed_total",
+    "model_column": "completed_total_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted__lag_00",
+    "display_name": "completed_admitted",
+    "raw_column": "completed_admitted",
+    "model_column": "completed_admitted_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted__lag_01",
+    "display_name": "completed_admitted",
+    "raw_column": "completed_admitted",
+    "model_column": "completed_admitted_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted__lag_02",
+    "display_name": "completed_admitted",
+    "raw_column": "completed_admitted",
+    "model_column": "completed_admitted_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted__lag_00",
+    "display_name": "completed_non_admitted",
+    "raw_column": "completed_non_admitted",
+    "model_column": "completed_non_admitted_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted__lag_01",
+    "display_name": "completed_non_admitted",
+    "raw_column": "completed_non_admitted",
+    "model_column": "completed_non_admitted_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted__lag_02",
+    "display_name": "completed_non_admitted",
+    "raw_column": "completed_non_admitted",
+    "model_column": "completed_non_admitted_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow__lag_00",
+    "display_name": "reported_net_inflow",
+    "raw_column": "reported_net_inflow",
+    "model_column": "reported_net_inflow_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow__lag_01",
+    "display_name": "reported_net_inflow",
+    "raw_column": "reported_net_inflow",
+    "model_column": "reported_net_inflow_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow__lag_02",
+    "display_name": "reported_net_inflow",
+    "raw_column": "reported_net_inflow",
+    "model_column": "reported_net_inflow_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "net_inflow__lag_00",
+    "display_name": "net_inflow",
+    "raw_column": "net_inflow",
+    "model_column": "net_inflow_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "net_inflow__lag_01",
+    "display_name": "net_inflow",
+    "raw_column": "net_inflow",
+    "model_column": "net_inflow_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "net_inflow__lag_02",
+    "display_name": "net_inflow",
+    "raw_column": "net_inflow",
+    "model_column": "net_inflow_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals__lag_00",
+    "display_name": "unreported_removals",
+    "raw_column": "unreported_removals",
+    "model_column": "unreported_removals_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals__lag_01",
+    "display_name": "unreported_removals",
+    "raw_column": "unreported_removals",
+    "model_column": "unreported_removals_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals__lag_02",
+    "display_name": "unreported_removals",
+    "raw_column": "unreported_removals",
+    "model_column": "unreported_removals_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_with_dta__lag_00",
+    "display_name": "waiting_list_with_dta",
+    "raw_column": "waiting_list_with_dta",
+    "model_column": "waiting_list_with_dta_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_with_dta__lag_01",
+    "display_name": "waiting_list_with_dta",
+    "raw_column": "waiting_list_with_dta",
+    "model_column": "waiting_list_with_dta_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_with_dta__lag_02",
+    "display_name": "waiting_list_with_dta",
+    "raw_column": "waiting_list_with_dta",
+    "model_column": "waiting_list_with_dta_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "incomplete_decision_to_admit__lag_00",
+    "display_name": "incomplete_decision_to_admit",
+    "raw_column": "incomplete_decision_to_admit",
+    "model_column": "incomplete_decision_to_admit_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "incomplete_decision_to_admit__lag_01",
+    "display_name": "incomplete_decision_to_admit",
+    "raw_column": "incomplete_decision_to_admit",
+    "model_column": "incomplete_decision_to_admit_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "incomplete_decision_to_admit__lag_02",
+    "display_name": "incomplete_decision_to_admit",
+    "raw_column": "incomplete_decision_to_admit",
+    "model_column": "incomplete_decision_to_admit_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag1__lag_00",
+    "display_name": "new_rtt_periods_lag1",
+    "raw_column": "new_rtt_periods_lag1",
+    "model_column": "new_rtt_periods_lag1_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag1__lag_01",
+    "display_name": "new_rtt_periods_lag1",
+    "raw_column": "new_rtt_periods_lag1",
+    "model_column": "new_rtt_periods_lag1_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag1__lag_02",
+    "display_name": "new_rtt_periods_lag1",
+    "raw_column": "new_rtt_periods_lag1",
+    "model_column": "new_rtt_periods_lag1_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag3__lag_00",
+    "display_name": "new_rtt_periods_lag3",
+    "raw_column": "new_rtt_periods_lag3",
+    "model_column": "new_rtt_periods_lag3_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag3__lag_01",
+    "display_name": "new_rtt_periods_lag3",
+    "raw_column": "new_rtt_periods_lag3",
+    "model_column": "new_rtt_periods_lag3_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag3__lag_02",
+    "display_name": "new_rtt_periods_lag3",
+    "raw_column": "new_rtt_periods_lag3",
+    "model_column": "new_rtt_periods_lag3_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag6__lag_00",
+    "display_name": "new_rtt_periods_lag6",
+    "raw_column": "new_rtt_periods_lag6",
+    "model_column": "new_rtt_periods_lag6_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag6__lag_01",
+    "display_name": "new_rtt_periods_lag6",
+    "raw_column": "new_rtt_periods_lag6",
+    "model_column": "new_rtt_periods_lag6_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag6__lag_02",
+    "display_name": "new_rtt_periods_lag6",
+    "raw_column": "new_rtt_periods_lag6",
+    "model_column": "new_rtt_periods_lag6_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag1__lag_00",
+    "display_name": "completed_total_lag1",
+    "raw_column": "completed_total_lag1",
+    "model_column": "completed_total_lag1_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag1__lag_01",
+    "display_name": "completed_total_lag1",
+    "raw_column": "completed_total_lag1",
+    "model_column": "completed_total_lag1_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag1__lag_02",
+    "display_name": "completed_total_lag1",
+    "raw_column": "completed_total_lag1",
+    "model_column": "completed_total_lag1_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag3__lag_00",
+    "display_name": "completed_total_lag3",
+    "raw_column": "completed_total_lag3",
+    "model_column": "completed_total_lag3_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag3__lag_01",
+    "display_name": "completed_total_lag3",
+    "raw_column": "completed_total_lag3",
+    "model_column": "completed_total_lag3_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag3__lag_02",
+    "display_name": "completed_total_lag3",
+    "raw_column": "completed_total_lag3",
+    "model_column": "completed_total_lag3_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag6__lag_00",
+    "display_name": "completed_total_lag6",
+    "raw_column": "completed_total_lag6",
+    "model_column": "completed_total_lag6_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag6__lag_01",
+    "display_name": "completed_total_lag6",
+    "raw_column": "completed_total_lag6",
+    "model_column": "completed_total_lag6_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag6__lag_02",
+    "display_name": "completed_total_lag6",
+    "raw_column": "completed_total_lag6",
+    "model_column": "completed_total_lag6_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag1__lag_00",
+    "display_name": "reported_net_inflow_lag1",
+    "raw_column": "reported_net_inflow_lag1",
+    "model_column": "reported_net_inflow_lag1_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag1__lag_01",
+    "display_name": "reported_net_inflow_lag1",
+    "raw_column": "reported_net_inflow_lag1",
+    "model_column": "reported_net_inflow_lag1_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag1__lag_02",
+    "display_name": "reported_net_inflow_lag1",
+    "raw_column": "reported_net_inflow_lag1",
+    "model_column": "reported_net_inflow_lag1_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag3__lag_00",
+    "display_name": "reported_net_inflow_lag3",
+    "raw_column": "reported_net_inflow_lag3",
+    "model_column": "reported_net_inflow_lag3_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag3__lag_01",
+    "display_name": "reported_net_inflow_lag3",
+    "raw_column": "reported_net_inflow_lag3",
+    "model_column": "reported_net_inflow_lag3_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag3__lag_02",
+    "display_name": "reported_net_inflow_lag3",
+    "raw_column": "reported_net_inflow_lag3",
+    "model_column": "reported_net_inflow_lag3_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag6__lag_00",
+    "display_name": "reported_net_inflow_lag6",
+    "raw_column": "reported_net_inflow_lag6",
+    "model_column": "reported_net_inflow_lag6_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag6__lag_01",
+    "display_name": "reported_net_inflow_lag6",
+    "raw_column": "reported_net_inflow_lag6",
+    "model_column": "reported_net_inflow_lag6_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag6__lag_02",
+    "display_name": "reported_net_inflow_lag6",
+    "raw_column": "reported_net_inflow_lag6",
+    "model_column": "reported_net_inflow_lag6_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag1__lag_00",
+    "display_name": "unreported_removals_lag1",
+    "raw_column": "unreported_removals_lag1",
+    "model_column": "unreported_removals_lag1_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag1__lag_01",
+    "display_name": "unreported_removals_lag1",
+    "raw_column": "unreported_removals_lag1",
+    "model_column": "unreported_removals_lag1_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag1__lag_02",
+    "display_name": "unreported_removals_lag1",
+    "raw_column": "unreported_removals_lag1",
+    "model_column": "unreported_removals_lag1_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag3__lag_00",
+    "display_name": "unreported_removals_lag3",
+    "raw_column": "unreported_removals_lag3",
+    "model_column": "unreported_removals_lag3_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag3__lag_01",
+    "display_name": "unreported_removals_lag3",
+    "raw_column": "unreported_removals_lag3",
+    "model_column": "unreported_removals_lag3_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag3__lag_02",
+    "display_name": "unreported_removals_lag3",
+    "raw_column": "unreported_removals_lag3",
+    "model_column": "unreported_removals_lag3_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag6__lag_00",
+    "display_name": "unreported_removals_lag6",
+    "raw_column": "unreported_removals_lag6",
+    "model_column": "unreported_removals_lag6_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag6__lag_01",
+    "display_name": "unreported_removals_lag6",
+    "raw_column": "unreported_removals_lag6",
+    "model_column": "unreported_removals_lag6_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag6__lag_02",
+    "display_name": "unreported_removals_lag6",
+    "raw_column": "unreported_removals_lag6",
+    "model_column": "unreported_removals_lag6_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "calendar_month_sin__lag_00",
+    "display_name": "calendar_month_sin",
+    "raw_column": "month_sin",
+    "model_column": "month_sin_model",
+    "feature_group": "calendar features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "calendar_month_sin__lag_01",
+    "display_name": "calendar_month_sin",
+    "raw_column": "month_sin",
+    "model_column": "month_sin_model",
+    "feature_group": "calendar features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "calendar_month_sin__lag_02",
+    "display_name": "calendar_month_sin",
+    "raw_column": "month_sin",
+    "model_column": "month_sin_model",
+    "feature_group": "calendar features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "calendar_month_cos__lag_00",
+    "display_name": "calendar_month_cos",
+    "raw_column": "month_cos",
+    "model_column": "month_cos_model",
+    "feature_group": "calendar features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "calendar_month_cos__lag_01",
+    "display_name": "calendar_month_cos",
+    "raw_column": "month_cos",
+    "model_column": "month_cos_model",
+    "feature_group": "calendar features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "calendar_month_cos__lag_02",
+    "display_name": "calendar_month_cos",
+    "raw_column": "month_cos",
+    "model_column": "month_cos_model",
+    "feature_group": "calendar features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "time_index__lag_00",
+    "display_name": "time_index",
+    "raw_column": "time_idx",
+    "model_column": "time_idx_model",
+    "feature_group": "calendar features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "time_index__lag_01",
+    "display_name": "time_index",
+    "raw_column": "time_idx",
+    "model_column": "time_idx_model",
+    "feature_group": "calendar features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "time_index__lag_02",
+    "display_name": "time_index",
+    "raw_column": "time_idx",
+    "model_column": "time_idx_model",
+    "feature_group": "calendar features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_missing__lag_00",
+    "display_name": "new_rtt_periods_missing",
+    "raw_column": "new_rtt_periods_missing",
+    "model_column": "new_rtt_periods_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_missing__lag_01",
+    "display_name": "new_rtt_periods_missing",
+    "raw_column": "new_rtt_periods_missing",
+    "model_column": "new_rtt_periods_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_missing__lag_02",
+    "display_name": "new_rtt_periods_missing",
+    "raw_column": "new_rtt_periods_missing",
+    "model_column": "new_rtt_periods_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted_missing__lag_00",
+    "display_name": "completed_admitted_missing",
+    "raw_column": "completed_admitted_missing",
+    "model_column": "completed_admitted_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted_missing__lag_01",
+    "display_name": "completed_admitted_missing",
+    "raw_column": "completed_admitted_missing",
+    "model_column": "completed_admitted_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted_missing__lag_02",
+    "display_name": "completed_admitted_missing",
+    "raw_column": "completed_admitted_missing",
+    "model_column": "completed_admitted_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted_missing__lag_00",
+    "display_name": "completed_non_admitted_missing",
+    "raw_column": "completed_non_admitted_missing",
+    "model_column": "completed_non_admitted_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted_missing__lag_01",
+    "display_name": "completed_non_admitted_missing",
+    "raw_column": "completed_non_admitted_missing",
+    "model_column": "completed_non_admitted_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted_missing__lag_02",
+    "display_name": "completed_non_admitted_missing",
+    "raw_column": "completed_non_admitted_missing",
+    "model_column": "completed_non_admitted_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_missing__lag_00",
+    "display_name": "completed_total_missing",
+    "raw_column": "completed_total_missing",
+    "model_column": "completed_total_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_missing__lag_01",
+    "display_name": "completed_total_missing",
+    "raw_column": "completed_total_missing",
+    "model_column": "completed_total_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_missing__lag_02",
+    "display_name": "completed_total_missing",
+    "raw_column": "completed_total_missing",
+    "model_column": "completed_total_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "opening_waiting_list_missing__lag_00",
+    "display_name": "opening_waiting_list_missing",
+    "raw_column": "opening_waiting_list_missing",
+    "model_column": "opening_waiting_list_missing_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "opening_waiting_list_missing__lag_01",
+    "display_name": "opening_waiting_list_missing",
+    "raw_column": "opening_waiting_list_missing",
+    "model_column": "opening_waiting_list_missing_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "opening_waiting_list_missing__lag_02",
+    "display_name": "opening_waiting_list_missing",
+    "raw_column": "opening_waiting_list_missing",
+    "model_column": "opening_waiting_list_missing_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "closing_waiting_list_missing__lag_00",
+    "display_name": "closing_waiting_list_missing",
+    "raw_column": "closing_waiting_list_missing",
+    "model_column": "closing_waiting_list_missing_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "closing_waiting_list_missing__lag_01",
+    "display_name": "closing_waiting_list_missing",
+    "raw_column": "closing_waiting_list_missing",
+    "model_column": "closing_waiting_list_missing_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "closing_waiting_list_missing__lag_02",
+    "display_name": "closing_waiting_list_missing",
+    "raw_column": "closing_waiting_list_missing",
+    "model_column": "closing_waiting_list_missing_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_missing__lag_00",
+    "display_name": "reported_net_inflow_missing",
+    "raw_column": "reported_net_inflow_missing",
+    "model_column": "reported_net_inflow_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_missing__lag_01",
+    "display_name": "reported_net_inflow_missing",
+    "raw_column": "reported_net_inflow_missing",
+    "model_column": "reported_net_inflow_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_missing__lag_02",
+    "display_name": "reported_net_inflow_missing",
+    "raw_column": "reported_net_inflow_missing",
+    "model_column": "reported_net_inflow_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_missing__lag_00",
+    "display_name": "unreported_removals_missing",
+    "raw_column": "unreported_removals_missing",
+    "model_column": "unreported_removals_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_missing__lag_01",
+    "display_name": "unreported_removals_missing",
+    "raw_column": "unreported_removals_missing",
+    "model_column": "unreported_removals_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_missing__lag_02",
+    "display_name": "unreported_removals_missing",
+    "raw_column": "unreported_removals_missing",
+    "model_column": "unreported_removals_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag1_missing__lag_00",
+    "display_name": "new_rtt_periods_lag1_missing",
+    "raw_column": "new_rtt_periods_lag1_missing",
+    "model_column": "new_rtt_periods_lag1_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag1_missing__lag_01",
+    "display_name": "new_rtt_periods_lag1_missing",
+    "raw_column": "new_rtt_periods_lag1_missing",
+    "model_column": "new_rtt_periods_lag1_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag1_missing__lag_02",
+    "display_name": "new_rtt_periods_lag1_missing",
+    "raw_column": "new_rtt_periods_lag1_missing",
+    "model_column": "new_rtt_periods_lag1_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag3_missing__lag_00",
+    "display_name": "new_rtt_periods_lag3_missing",
+    "raw_column": "new_rtt_periods_lag3_missing",
+    "model_column": "new_rtt_periods_lag3_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag3_missing__lag_01",
+    "display_name": "new_rtt_periods_lag3_missing",
+    "raw_column": "new_rtt_periods_lag3_missing",
+    "model_column": "new_rtt_periods_lag3_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag3_missing__lag_02",
+    "display_name": "new_rtt_periods_lag3_missing",
+    "raw_column": "new_rtt_periods_lag3_missing",
+    "model_column": "new_rtt_periods_lag3_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag6_missing__lag_00",
+    "display_name": "new_rtt_periods_lag6_missing",
+    "raw_column": "new_rtt_periods_lag6_missing",
+    "model_column": "new_rtt_periods_lag6_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag6_missing__lag_01",
+    "display_name": "new_rtt_periods_lag6_missing",
+    "raw_column": "new_rtt_periods_lag6_missing",
+    "model_column": "new_rtt_periods_lag6_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_lag6_missing__lag_02",
+    "display_name": "new_rtt_periods_lag6_missing",
+    "raw_column": "new_rtt_periods_lag6_missing",
+    "model_column": "new_rtt_periods_lag6_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag1_missing__lag_00",
+    "display_name": "completed_total_lag1_missing",
+    "raw_column": "completed_total_lag1_missing",
+    "model_column": "completed_total_lag1_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag1_missing__lag_01",
+    "display_name": "completed_total_lag1_missing",
+    "raw_column": "completed_total_lag1_missing",
+    "model_column": "completed_total_lag1_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag1_missing__lag_02",
+    "display_name": "completed_total_lag1_missing",
+    "raw_column": "completed_total_lag1_missing",
+    "model_column": "completed_total_lag1_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag3_missing__lag_00",
+    "display_name": "completed_total_lag3_missing",
+    "raw_column": "completed_total_lag3_missing",
+    "model_column": "completed_total_lag3_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag3_missing__lag_01",
+    "display_name": "completed_total_lag3_missing",
+    "raw_column": "completed_total_lag3_missing",
+    "model_column": "completed_total_lag3_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag3_missing__lag_02",
+    "display_name": "completed_total_lag3_missing",
+    "raw_column": "completed_total_lag3_missing",
+    "model_column": "completed_total_lag3_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag6_missing__lag_00",
+    "display_name": "completed_total_lag6_missing",
+    "raw_column": "completed_total_lag6_missing",
+    "model_column": "completed_total_lag6_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag6_missing__lag_01",
+    "display_name": "completed_total_lag6_missing",
+    "raw_column": "completed_total_lag6_missing",
+    "model_column": "completed_total_lag6_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_total_lag6_missing__lag_02",
+    "display_name": "completed_total_lag6_missing",
+    "raw_column": "completed_total_lag6_missing",
+    "model_column": "completed_total_lag6_missing_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag1_missing__lag_00",
+    "display_name": "reported_net_inflow_lag1_missing",
+    "raw_column": "reported_net_inflow_lag1_missing",
+    "model_column": "reported_net_inflow_lag1_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag1_missing__lag_01",
+    "display_name": "reported_net_inflow_lag1_missing",
+    "raw_column": "reported_net_inflow_lag1_missing",
+    "model_column": "reported_net_inflow_lag1_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag1_missing__lag_02",
+    "display_name": "reported_net_inflow_lag1_missing",
+    "raw_column": "reported_net_inflow_lag1_missing",
+    "model_column": "reported_net_inflow_lag1_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag3_missing__lag_00",
+    "display_name": "reported_net_inflow_lag3_missing",
+    "raw_column": "reported_net_inflow_lag3_missing",
+    "model_column": "reported_net_inflow_lag3_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag3_missing__lag_01",
+    "display_name": "reported_net_inflow_lag3_missing",
+    "raw_column": "reported_net_inflow_lag3_missing",
+    "model_column": "reported_net_inflow_lag3_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag3_missing__lag_02",
+    "display_name": "reported_net_inflow_lag3_missing",
+    "raw_column": "reported_net_inflow_lag3_missing",
+    "model_column": "reported_net_inflow_lag3_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag6_missing__lag_00",
+    "display_name": "reported_net_inflow_lag6_missing",
+    "raw_column": "reported_net_inflow_lag6_missing",
+    "model_column": "reported_net_inflow_lag6_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag6_missing__lag_01",
+    "display_name": "reported_net_inflow_lag6_missing",
+    "raw_column": "reported_net_inflow_lag6_missing",
+    "model_column": "reported_net_inflow_lag6_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "reported_net_inflow_lag6_missing__lag_02",
+    "display_name": "reported_net_inflow_lag6_missing",
+    "raw_column": "reported_net_inflow_lag6_missing",
+    "model_column": "reported_net_inflow_lag6_missing_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag1_missing__lag_00",
+    "display_name": "unreported_removals_lag1_missing",
+    "raw_column": "unreported_removals_lag1_missing",
+    "model_column": "unreported_removals_lag1_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag1_missing__lag_01",
+    "display_name": "unreported_removals_lag1_missing",
+    "raw_column": "unreported_removals_lag1_missing",
+    "model_column": "unreported_removals_lag1_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag1_missing__lag_02",
+    "display_name": "unreported_removals_lag1_missing",
+    "raw_column": "unreported_removals_lag1_missing",
+    "model_column": "unreported_removals_lag1_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag3_missing__lag_00",
+    "display_name": "unreported_removals_lag3_missing",
+    "raw_column": "unreported_removals_lag3_missing",
+    "model_column": "unreported_removals_lag3_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag3_missing__lag_01",
+    "display_name": "unreported_removals_lag3_missing",
+    "raw_column": "unreported_removals_lag3_missing",
+    "model_column": "unreported_removals_lag3_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag3_missing__lag_02",
+    "display_name": "unreported_removals_lag3_missing",
+    "raw_column": "unreported_removals_lag3_missing",
+    "model_column": "unreported_removals_lag3_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag6_missing__lag_00",
+    "display_name": "unreported_removals_lag6_missing",
+    "raw_column": "unreported_removals_lag6_missing",
+    "model_column": "unreported_removals_lag6_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag6_missing__lag_01",
+    "display_name": "unreported_removals_lag6_missing",
+    "raw_column": "unreported_removals_lag6_missing",
+    "model_column": "unreported_removals_lag6_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "unreported_removals_lag6_missing__lag_02",
+    "display_name": "unreported_removals_lag6_missing",
+    "raw_column": "unreported_removals_lag6_missing",
+    "model_column": "unreported_removals_lag6_missing_model",
+    "feature_group": "unreported-removal features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_imputed__lag_00",
+    "display_name": "waiting_list_imputed",
+    "raw_column": "waiting_list_imputed",
+    "model_column": "waiting_list_imputed_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_imputed__lag_01",
+    "display_name": "waiting_list_imputed",
+    "raw_column": "waiting_list_imputed",
+    "model_column": "waiting_list_imputed_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_imputed__lag_02",
+    "display_name": "waiting_list_imputed",
+    "raw_column": "waiting_list_imputed",
+    "model_column": "waiting_list_imputed_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_with_dta_imputed__lag_00",
+    "display_name": "waiting_list_with_dta_imputed",
+    "raw_column": "waiting_list_with_dta_imputed",
+    "model_column": "waiting_list_with_dta_imputed_model",
+    "feature_group": "waiting-list lags",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_with_dta_imputed__lag_01",
+    "display_name": "waiting_list_with_dta_imputed",
+    "raw_column": "waiting_list_with_dta_imputed",
+    "model_column": "waiting_list_with_dta_imputed_model",
+    "feature_group": "waiting-list lags",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "waiting_list_with_dta_imputed__lag_02",
+    "display_name": "waiting_list_with_dta_imputed",
+    "raw_column": "waiting_list_with_dta_imputed",
+    "model_column": "waiting_list_with_dta_imputed_model",
+    "feature_group": "waiting-list lags",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted_imputed__lag_00",
+    "display_name": "completed_admitted_imputed",
+    "raw_column": "completed_admitted_imputed",
+    "model_column": "completed_admitted_imputed_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted_imputed__lag_01",
+    "display_name": "completed_admitted_imputed",
+    "raw_column": "completed_admitted_imputed",
+    "model_column": "completed_admitted_imputed_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_admitted_imputed__lag_02",
+    "display_name": "completed_admitted_imputed",
+    "raw_column": "completed_admitted_imputed",
+    "model_column": "completed_admitted_imputed_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted_imputed__lag_00",
+    "display_name": "completed_non_admitted_imputed",
+    "raw_column": "completed_non_admitted_imputed",
+    "model_column": "completed_non_admitted_imputed_model",
+    "feature_group": "completed-pathway features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted_imputed__lag_01",
+    "display_name": "completed_non_admitted_imputed",
+    "raw_column": "completed_non_admitted_imputed",
+    "model_column": "completed_non_admitted_imputed_model",
+    "feature_group": "completed-pathway features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "completed_non_admitted_imputed__lag_02",
+    "display_name": "completed_non_admitted_imputed",
+    "raw_column": "completed_non_admitted_imputed",
+    "model_column": "completed_non_admitted_imputed_model",
+    "feature_group": "completed-pathway features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_imputed__lag_00",
+    "display_name": "new_rtt_periods_imputed",
+    "raw_column": "new_rtt_periods_imputed",
+    "model_column": "new_rtt_periods_imputed_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 0,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_imputed__lag_01",
+    "display_name": "new_rtt_periods_imputed",
+    "raw_column": "new_rtt_periods_imputed",
+    "model_column": "new_rtt_periods_imputed_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 1,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "new_rtt_periods_imputed__lag_02",
+    "display_name": "new_rtt_periods_imputed",
+    "raw_column": "new_rtt_periods_imputed",
+    "model_column": "new_rtt_periods_imputed_model",
+    "feature_group": "referral or new RTT-period features",
+    "lag": 2,
+    "kind": "raw_encoder_feature"
+  },
+  {
+    "feature_name": "trust_identifier_embedding",
+    "display_name": "trust_identifier_embedding",
+    "raw_column": "trust_idx",
+    "model_column": null,
+    "feature_group": "trust and specialty identifiers or embeddings",
+    "lag": 0,
+    "kind": "trust_identifier"
+  },
+  {
+    "feature_name": "specialty_identifier_embedding",
+    "display_name": "specialty_identifier_embedding",
+    "raw_column": "specialty_idx",
+    "model_column": null,
+    "feature_group": "trust and specialty identifiers or embeddings",
+    "lag": 0,
+    "kind": "specialty_identifier"
+  }
+]

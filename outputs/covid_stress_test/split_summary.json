@@ -1,0 +1,97 @@
+{
+  "target_column": "incomplete_total",
+  "feature_columns": [
+    "incomplete_total",
+    "waiting_list",
+    "opening_waiting_list",
+    "closing_waiting_list",
+    "completed_admitted",
+    "completed_non_admitted",
+    "waiting_list_with_dta",
+    "incomplete_decision_to_admit",
+    "new_rtt_periods",
+    "completed_total",
+    "net_inflow",
+    "reported_net_inflow",
+    "unreported_removals",
+    "new_rtt_periods_lag1",
+    "new_rtt_periods_lag3",
+    "new_rtt_periods_lag6",
+    "completed_total_lag1",
+    "completed_total_lag3",
+    "completed_total_lag6",
+    "reported_net_inflow_lag1",
+    "reported_net_inflow_lag3",
+    "reported_net_inflow_lag6",
+    "unreported_removals_lag1",
+    "unreported_removals_lag3",
+    "unreported_removals_lag6",
+    "new_rtt_periods_missing",
+    "completed_admitted_missing",
+    "completed_non_admitted_missing",
+    "completed_total_missing",
+    "opening_waiting_list_missing",
+    "closing_waiting_list_missing",
+    "reported_net_inflow_missing",
+    "unreported_removals_missing",
+    "flow_components_missing",
+    "is_imputed_month",
+    "month_sin",
+    "month_cos",
+    "time_idx"
+  ],
+  "date_coverage": {
+    "minimum_month": "2015-10-01",
+    "maximum_month": "2026-05-01",
+    "observed_month_count": 128,
+    "missing_calendar_months_in_project_range": []
+  },
+  "core_training_period": {
+    "end_month": "2019-02-01",
+    "purpose": "Fit validation model and all preprocessing used for pre-COVID validation."
+  },
+  "pre_covid_validation_period": {
+    "start_month": "2019-03-01",
+    "end_month": "2020-02-01"
+  },
+  "full_pre_covid_training_period": {
+    "end_month": "2020-02-01",
+    "purpose": "Fit final shock experiment model and all preprocessing used for COVID/recovery forecasts."
+  },
+  "covid_shock_period": {
+    "start_month": "2020-03-01",
+    "end_month": "2021-09-01"
+  },
+  "recovery_period": {
+    "start_month": "2021-10-01",
+    "available_if_data_extend_to_or_after": "2021-10-01"
+  },
+  "validation_training_samples": 54226,
+  "pre_covid_validation_samples": 38449,
+  "final_pre_covid_training_samples": 93769,
+  "covid_shock_samples": 58087,
+  "recovery_samples": 144034,
+  "trust_specialty_series_forecast": 3573,
+  "leakage_checks": {
+    "max_validation_model_training_target_month": "2019-02-01",
+    "min_pre_covid_validation_target_month": "2019-03-01",
+    "max_final_model_training_target_month": "2020-02-01",
+    "min_covid_shock_target_month": "2020-03-01",
+    "final_model_scaler_fit_end_month": "2020-02-01",
+    "training_before_covid_test": true,
+    "scaler_fit_before_covid_test": true
+  },
+  "outputs": {
+    "predictions": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\covid_shock_predictions.parquet",
+    "metrics": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\covid_shock_metrics.csv",
+    "degradation": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\covid_shock_degradation.csv",
+    "methodology_note": "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\methodology_note.md",
+    "plots": [
+      "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\actual_vs_forecast_covid_shock.png",
+      "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\prediction_intervals_covid_shock_tcn.png",
+      "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\error_over_time.png",
+      "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\performance_by_trust.png",
+      "C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\outputs\\covid_stress_test\\performance_by_specialty.png"
+    ]
+  }
+}

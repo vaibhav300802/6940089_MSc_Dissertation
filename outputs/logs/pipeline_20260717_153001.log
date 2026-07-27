@@ -1,0 +1,17 @@
+2026-07-17 15:30:03,807 INFO Loaded central settings from C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\config\pipeline_config.json
+2026-07-17 15:30:03,807 INFO Seed report: {"python_random_seed": 42, "numpy_random_seed": 42, "pythonhashseed": "42", "torch_available": true, "torch_seed": 42, "deterministic_torch_requested": false, "deterministic_torch_applied": false, "limitations": ["GPU kernels, data-loader workers, and external solver implementations may still introduce small non-determinism."]}
+2026-07-17 15:30:03,807 INFO Starting stage command for optimise: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe colab_notebooks/layer3_nhs_rtt_lp_optimisation_colab.py
+2026-07-17 15:30:04,821 ERROR Pipeline stage failed with exit code 1
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\run_pipeline.py", line 290, in main
+    produced_files.extend(execute_stage(stage))
+                          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\run_pipeline.py", line 139, in execute_stage
+    run_command([sys.executable, "colab_notebooks/layer3_nhs_rtt_lp_optimisation_colab.py"], stage)
+  File "C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\run_pipeline.py", line 50, in run_command
+    subprocess.run(command, cwd=PROJECT_ROOT, check=True, env=command_env)
+  File "C:\Users\DELL\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\DELL\\Documents\\Codex\\2026-07-15\\i-am-building-an-msc-data\\outputs\\nhs_rtt_msc_project\\venv\\Scripts\\python.exe', 'colab_notebooks/layer3_nhs_rtt_lp_optimisation_colab.py']' returned non-zero exit status 1.
+2026-07-17 15:30:05,753 INFO Run summary written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\run_summaries\run_summary_20260717_153001.json
+2026-07-17 15:30:05,754 INFO Log file written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\logs\pipeline_20260717_153001.log
