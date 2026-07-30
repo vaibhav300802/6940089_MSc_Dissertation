@@ -1,0 +1,7 @@
+2026-07-28 08:07:07,209 INFO Loaded central settings from C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\config\pipeline_config.json
+2026-07-28 08:07:07,209 INFO Seed report: {"python_random_seed": 42, "numpy_random_seed": 42, "pythonhashseed": "42", "torch_available": true, "torch_seed": 42, "deterministic_torch_requested": false, "deterministic_torch_applied": false, "limitations": ["GPU kernels, data-loader workers, and external solver implementations may still introduce small non-determinism."]}
+2026-07-28 08:07:07,210 INFO Starting stage command for rolling_origin: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe colab_notebooks/layer1c_nhs_rtt_rolling_origin_validation_colab.py
+2026-07-28 09:27:54,888 INFO Completed stage command for rolling_origin
+2026-07-28 09:27:54,909 INFO Stage rolling_origin finished in 4847.7 seconds
+2026-07-28 09:27:56,788 INFO Run summary written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\run_summaries\run_summary_20260728_080704.json
+2026-07-28 09:27:56,788 INFO Log file written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\logs\pipeline_20260728_080704.log

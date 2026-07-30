@@ -1,4 +1,4 @@
-﻿trust_code,trust_name,specialty_code,specialty_name,is_surgical_specialty,specialty_inclusion_criteria,total_months,part2a_available_months,latest_part2a_value,latest_total_incomplete_value,part2a_coverage_pct,eligible_for_capacity_simulation
+trust_code,trust_name,specialty_code,specialty_name,is_surgical_specialty,specialty_inclusion_criteria,total_months,part2a_available_months,latest_part2a_value,latest_total_incomplete_value,part2a_coverage_pct,eligible_for_capacity_simulation
 RCF,AIREDALE NHS FOUNDATION TRUST,120,Ear Nose and Throat Service,True,"Included: Ear, Nose and Throat treatment function commonly includes operative pathways.",62,62,57.0,1278.0,100.0,True
 RCF,AIREDALE NHS FOUNDATION TRUST,120,"Ear, Nose & Throat (ENT)",True,"Included: Ear, Nose and Throat treatment function commonly includes operative pathways.",42,42,31.0,425.0,100.0,True
 RCF,AIREDALE NHS FOUNDATION TRUST,100,General Surgery Service,True,Included: General Surgery treatment function commonly includes operative admitted pathways.,62,62,600.0,1656.0,100.0,True
@@ -9812,4 +9812,3 @@ RCB,YORK TEACHING HOSPITAL NHS FOUNDATION TRUST,300,General Internal Medicine Se
 RCB,YORK TEACHING HOSPITAL NHS FOUNDATION TRUST,400,Neurology Service,False,Excluded: treatment function is not in the configured decision-to-admit capacity-simulation specialty list.,2,0,,947.0,0.0,False
 RCB,YORK TEACHING HOSPITAL NHS FOUNDATION TRUST,X06,Other - Other Services,False,Excluded: treatment function is not in the configured decision-to-admit capacity-simulation specialty list.,2,0,,39.0,0.0,False
 RCB,YORK TEACHING HOSPITAL NHS FOUNDATION TRUST,X04,Other - Paediatric Services,False,Excluded: treatment function is not in the configured decision-to-admit capacity-simulation specialty list.,2,0,,584.0,0.0,False
-

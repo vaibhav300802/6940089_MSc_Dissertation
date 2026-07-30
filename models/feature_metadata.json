@@ -1794,6 +1794,78 @@
     "tcn_levels": 5,
     "kernel_size": 3,
     "dropout": 0.15,
-    "embedding_dim": 16
+    "embedding_dim": 16,
+    "artifact_fingerprint": {
+      "fingerprint_version": 1,
+      "target_column": "incomplete_total",
+      "target_available_column": "incomplete_total_source_available",
+      "target_label": "total incomplete RTT pathways",
+      "row_count": 489914,
+      "series_count": 4992,
+      "trust_count": 500,
+      "specialty_count": 24,
+      "min_month": "2015-10-01",
+      "max_month": "2026-05-01",
+      "boundaries": {
+        "max_time_idx": 127,
+        "validation_start_idx": 104,
+        "test_start_idx": 116
+      },
+      "sample_counts": {
+        "train": 193967,
+        "val": 3158,
+        "test": 3045
+      },
+      "feature_columns_sha256": "723271d5e2375bdd0bf189791e373c54a73813587980ea0dc825804d3740fb5f",
+      "raw_feature_columns_sha256": "1adfae201e5d0198a9f8b2597bfe67c44386b5312a42078c9fb4c035af120388",
+      "feature_stats_sha256": "6e9a045a0210c9555ec0dac1deb27cea700efffd0a2f0a7f2251b96d97bd2744",
+      "trust_mapping_sha256": "6d51bdfd5d85801694f50c0fec2009a5b70518a5a253fc0bf7d8032ab12d3bda",
+      "specialty_mapping_sha256": "08c34930b81a27a4059c4ca2640d3422976b68ae6015a07cdc936c087e5f16b2",
+      "prepared_target_sha256": "53b7673b957db11f75f3afcbba90abc9cb52eee59669f233b45b73c7ecd7b13d",
+      "model_config_sha256": "34ceff35f614190b0c01497f12a0b4b80cb5754537904cd3e1ab1416bb7ccc51",
+      "runtime_config": {
+        "encoder_length": 24,
+        "prediction_length": 12,
+        "validation_months": 12,
+        "test_months": 12,
+        "random_seed": 42
+      }
+    }
+  },
+  "artifact_fingerprint": {
+    "fingerprint_version": 1,
+    "target_column": "incomplete_total",
+    "target_available_column": "incomplete_total_source_available",
+    "target_label": "total incomplete RTT pathways",
+    "row_count": 489914,
+    "series_count": 4992,
+    "trust_count": 500,
+    "specialty_count": 24,
+    "min_month": "2015-10-01",
+    "max_month": "2026-05-01",
+    "boundaries": {
+      "max_time_idx": 127,
+      "validation_start_idx": 104,
+      "test_start_idx": 116
+    },
+    "sample_counts": {
+      "train": 193967,
+      "val": 3158,
+      "test": 3045
+    },
+    "feature_columns_sha256": "723271d5e2375bdd0bf189791e373c54a73813587980ea0dc825804d3740fb5f",
+    "raw_feature_columns_sha256": "1adfae201e5d0198a9f8b2597bfe67c44386b5312a42078c9fb4c035af120388",
+    "feature_stats_sha256": "6e9a045a0210c9555ec0dac1deb27cea700efffd0a2f0a7f2251b96d97bd2744",
+    "trust_mapping_sha256": "6d51bdfd5d85801694f50c0fec2009a5b70518a5a253fc0bf7d8032ab12d3bda",
+    "specialty_mapping_sha256": "08c34930b81a27a4059c4ca2640d3422976b68ae6015a07cdc936c087e5f16b2",
+    "prepared_target_sha256": "53b7673b957db11f75f3afcbba90abc9cb52eee59669f233b45b73c7ecd7b13d",
+    "model_config_sha256": "34ceff35f614190b0c01497f12a0b4b80cb5754537904cd3e1ab1416bb7ccc51",
+    "runtime_config": {
+      "encoder_length": 24,
+      "prediction_length": 12,
+      "validation_months": 12,
+      "test_months": 12,
+      "random_seed": 42
+    }
   }
 }

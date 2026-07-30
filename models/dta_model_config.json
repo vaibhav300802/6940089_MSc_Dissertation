@@ -14,5 +14,41 @@
   "tcn_levels": 5,
   "kernel_size": 3,
   "dropout": 0.15,
-  "embedding_dim": 16
+  "embedding_dim": 16,
+  "artifact_fingerprint": {
+    "fingerprint_version": 1,
+    "target_column": "incomplete_decision_to_admit",
+    "target_available_column": "incomplete_decision_to_admit_source_available",
+    "target_label": "incomplete RTT pathways with decision to admit",
+    "row_count": 262763,
+    "series_count": 2437,
+    "trust_count": 459,
+    "specialty_count": 10,
+    "min_month": "2015-10-01",
+    "max_month": "2026-05-01",
+    "boundaries": {
+      "max_time_idx": 127,
+      "validation_start_idx": 104,
+      "test_start_idx": 116
+    },
+    "sample_counts": {
+      "train": 96606,
+      "val": 1454,
+      "test": 1404
+    },
+    "feature_columns_sha256": "723271d5e2375bdd0bf189791e373c54a73813587980ea0dc825804d3740fb5f",
+    "raw_feature_columns_sha256": "1adfae201e5d0198a9f8b2597bfe67c44386b5312a42078c9fb4c035af120388",
+    "feature_stats_sha256": "6ec772bc4bbeafe057fe196c346b088cbfa1217e4ad824da7a9c1915827730c0",
+    "trust_mapping_sha256": "e75951506814838d1e66d94fec556a306bafaaee6cda93ebf8abf6420bb88dab",
+    "specialty_mapping_sha256": "e0e6aa1bff5e6d63fbd83fd6f3b2732a249c5cd722813fe556cae512710cbb14",
+    "prepared_target_sha256": "ba2fd2ad5e4a2abea156f9e1ae0e1addeb6c150dbc8912ec27ac8bd57972f926",
+    "model_config_sha256": "7852beec1c890fae4412440af3cff06898eb9d7271ad5a1b0cf0b0e985b3f764",
+    "runtime_config": {
+      "encoder_length": 24,
+      "prediction_length": 12,
+      "validation_months": 12,
+      "test_months": 12,
+      "random_seed": 42
+    }
+  }
 }

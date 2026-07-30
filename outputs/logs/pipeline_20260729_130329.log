@@ -1,0 +1,13 @@
+2026-07-29 13:03:32,275 INFO Loaded central settings from C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\config\pipeline_config.json
+2026-07-29 13:03:32,276 INFO Seed report: {"python_random_seed": 42, "numpy_random_seed": 42, "pythonhashseed": "42", "torch_available": true, "torch_seed": 42, "deterministic_torch_requested": false, "deterministic_torch_applied": false, "limitations": ["GPU kernels, data-loader workers, and external solver implementations may still introduce small non-determinism."]}
+2026-07-29 13:03:32,276 INFO Starting stage command for validate: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe -m compileall -q .
+2026-07-29 13:03:53,063 INFO Completed stage command for validate
+2026-07-29 13:03:53,063 INFO Starting stage command for validate: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe validate_project.py
+2026-07-29 13:03:57,493 INFO Completed stage command for validate
+2026-07-29 13:03:57,494 INFO Starting stage command for validate: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe dashboard/startup_validation.py
+2026-07-29 13:03:58,775 INFO Completed stage command for validate
+2026-07-29 13:03:58,775 INFO Starting stage command for validate: C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\venv\Scripts\python.exe -m unittest discover -s tests
+2026-07-29 13:04:09,500 INFO Completed stage command for validate
+2026-07-29 13:04:09,500 INFO Stage validate finished in 37.2 seconds
+2026-07-29 13:04:11,112 INFO Run summary written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\run_summaries\run_summary_20260729_130329.json
+2026-07-29 13:04:11,112 INFO Log file written to C:\Users\DELL\Documents\Codex\2026-07-15\i-am-building-an-msc-data\outputs\nhs_rtt_msc_project\outputs\logs\pipeline_20260729_130329.log

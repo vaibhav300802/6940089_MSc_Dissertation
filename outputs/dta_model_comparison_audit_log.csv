@@ -1,0 +1,9 @@
+model,model_name,status,rows,reason,training_rows,prediction_rows,feature_count,note
+naive_last_value,naive_last_value,excluded_rows,36.0,missing prediction or actual,,,,
+seasonal_naive_12m,seasonal_naive_12m,excluded_rows,43.0,missing prediction or actual,,,,
+TCN,TCN,excluded_keys,75.0,not all required models available,,,,
+naive_last_value,naive_last_value,excluded_keys,39.0,not all required models available,,,,
+seasonal_naive_12m,seasonal_naive_12m,excluded_keys,32.0,not all required models available,,,,
+historical_seasonal_mean,historical_seasonal_mean,excluded_keys,75.0,not all required models available,,,,
+hist_gradient_boosting,hist_gradient_boosting,excluded_keys,75.0,not all required models available,,,,
+hist_gradient_boosting,hist_gradient_boosting,trained,,,350000.0,16848.0,20.0,HistGradientBoostingRegressor quantile models trained on training-period rows only.

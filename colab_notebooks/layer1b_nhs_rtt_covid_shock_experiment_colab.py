@@ -85,6 +85,7 @@ else:
     )
 
 from nhs_rtt_pipeline.config import COLUMNS, ensure_directories, get_paths
+from nhs_rtt_pipeline.covid_shock import compute_covid_shock_split_boundaries
 from nhs_rtt_pipeline.modeling import QuantileLoss, TCNQuantileRegressor, build_tcn_model_config
 from nhs_rtt_pipeline.preprocessing import LOG1P_NON_NEGATIVE_FEATURES, SIGNED_OPERATIONAL_FEATURES
 from nhs_rtt_pipeline.reproducibility import set_global_seed
@@ -281,18 +282,20 @@ TARGET_COLUMN = choose_target_column(raw_rtt)
 FEATURE_COLUMNS = select_feature_columns(raw_rtt, TARGET_COLUMN)
 
 date_coverage = summarize_month_coverage(raw_rtt)
-train_end = pd.Timestamp(CONFIG.train_end)
-covid_start = pd.Timestamp(CONFIG.covid_test_start)
-covid_end = pd.Timestamp(CONFIG.covid_test_end)
-recovery_start = pd.Timestamp(CONFIG.recovery_start)
-validation_start = train_end - pd.DateOffset(months=CONFIG.validation_months - 1)
-core_train_end = validation_start - pd.DateOffset(months=1)
-
-assert train_end < covid_start, "Pre-COVID training end must be earlier than COVID test start."
-if pd.Timestamp(date_coverage["maximum_month"]) < covid_start:
-    raise ValueError("The processed dataset ends before the configured COVID shock test period starts.")
-if pd.Timestamp(date_coverage["minimum_month"]) > core_train_end:
-    raise ValueError("The processed dataset starts too late for the configured pre-COVID validation split.")
+_split_boundaries = compute_covid_shock_split_boundaries(
+    train_end=CONFIG.train_end,
+    covid_test_start=CONFIG.covid_test_start,
+    covid_test_end=CONFIG.covid_test_end,
+    recovery_start=CONFIG.recovery_start,
+    validation_months=CONFIG.validation_months,
+    date_coverage=date_coverage,
+)
+train_end = _split_boundaries.train_end
+covid_start = _split_boundaries.covid_start
+covid_end = _split_boundaries.covid_end
+recovery_start = _split_boundaries.recovery_start
+validation_start = _split_boundaries.validation_start
+core_train_end = _split_boundaries.core_train_end
 
 split_summary = {
     "target_column": TARGET_COLUMN,

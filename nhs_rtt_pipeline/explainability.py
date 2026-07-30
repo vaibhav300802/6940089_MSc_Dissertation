@@ -568,6 +568,31 @@ def kernel_nsamples(n_features: int, configured_nsamples: int) -> int:
     return int(max(configured_nsamples, 2 * n_features + 32))
 
 
+def replace_with_retry(source: Path, destination: Path, attempts: int = 8, delay_seconds: float = 1.5) -> None:
+    """Atomically replace ``destination`` with ``source``, retrying on transient Windows file locks.
+
+    On Windows, cloud-sync clients (OneDrive) and antivirus real-time scanning can transiently
+    hold an open handle on the destination file, which makes ``os.replace()`` raise
+    ``PermissionError`` (WinError 5) even though nothing is actually wrong with the run. Retry
+    briefly instead of losing hours of completed SHAP computation to a momentary file lock.
+    """
+    last_error: Optional[OSError] = None
+    for attempt in range(1, attempts + 1):
+        try:
+            source.replace(destination)
+            return
+        except PermissionError as exc:
+            last_error = exc
+            if attempt < attempts:
+                time.sleep(delay_seconds)
+    raise RuntimeError(
+        f"Could not replace {destination} after {attempts} attempts because the file stayed locked "
+        "(commonly OneDrive sync, Windows Search Indexer, or antivirus real-time scanning). "
+        "The in-memory SHAP progress for this run is intact; rerun the explain stage once the file "
+        "is free, or pause OneDrive/Defender scanning for this project folder."
+    ) from last_error
+
+
 def compute_kernel_shap(
     explainer: CustomTCNShapExplainer,
     contexts: Sequence[Mapping[str, Any]],
@@ -598,21 +623,26 @@ def compute_kernel_shap(
     horizons_array = np.asarray(list(explainer.horizons), dtype=np.int64)
 
     if checkpoint is not None and checkpoint.exists():
-        checkpoint_data = np.load(checkpoint, allow_pickle=False)
-        existing_shape = tuple(checkpoint_data["shap_values"].shape)
-        expected_shape = tuple(shap_values.shape)
-        if existing_shape != expected_shape:
-            raise ValueError(
-                f"Existing SHAP checkpoint has shape {existing_shape}; expected {expected_shape}. "
-                f"Remove the stale checkpoint if you intentionally changed SHAP settings: {checkpoint}"
-            )
-        saved_context_ids = checkpoint_data["context_ids"].astype(np.int64)
-        if not np.array_equal(saved_context_ids, context_ids):
-            raise ValueError("Existing SHAP checkpoint context ids do not match the current selected contexts.")
-        shap_values[:] = checkpoint_data["shap_values"]
-        expected_values[:] = checkpoint_data["expected_values"]
-        model_outputs[:] = checkpoint_data["model_outputs"]
-        completed_mask[:] = checkpoint_data["completed_mask"].astype(bool)
+        # Use a `with` block so the underlying file handle is released immediately
+        # after the arrays are copied out. Left open (as a bare `np.load()` would
+        # leave it), this handle survives for the rest of the function — on
+        # Windows that then blocks every later attempt to replace this same file
+        # during checkpointing, regardless of OneDrive/antivirus behaviour.
+        with np.load(checkpoint, allow_pickle=False) as checkpoint_data:
+            existing_shape = tuple(checkpoint_data["shap_values"].shape)
+            expected_shape = tuple(shap_values.shape)
+            if existing_shape != expected_shape:
+                raise ValueError(
+                    f"Existing SHAP checkpoint has shape {existing_shape}; expected {expected_shape}. "
+                    f"Remove the stale checkpoint if you intentionally changed SHAP settings: {checkpoint}"
+                )
+            saved_context_ids = checkpoint_data["context_ids"].astype(np.int64)
+            if not np.array_equal(saved_context_ids, context_ids):
+                raise ValueError("Existing SHAP checkpoint context ids do not match the current selected contexts.")
+            shap_values[:] = checkpoint_data["shap_values"]
+            expected_values[:] = checkpoint_data["expected_values"]
+            model_outputs[:] = checkpoint_data["model_outputs"]
+            completed_mask[:] = checkpoint_data["completed_mask"].astype(bool)
         if audit_checkpoint is not None and audit_checkpoint.exists():
             audit_rows = pd.read_csv(audit_checkpoint).to_dict("records")
         print(
@@ -621,8 +651,13 @@ def compute_kernel_shap(
             flush=True,
         )
 
-    def save_checkpoint() -> None:
+    checkpoint_dirty = checkpoint is not None and not checkpoint.exists()
+
+    def save_checkpoint(force: bool = False) -> None:
+        nonlocal checkpoint_dirty
         if checkpoint is None:
+            return
+        if not force and not checkpoint_dirty:
             return
         checkpoint.parent.mkdir(parents=True, exist_ok=True)
         temporary = checkpoint.with_name(f"{checkpoint.name}.tmp.npz")
@@ -636,9 +671,10 @@ def compute_kernel_shap(
             horizons=horizons_array,
             nsamples=np.asarray([nsamples], dtype=np.int64),
         )
-        temporary.replace(checkpoint)
+        replace_with_retry(temporary, checkpoint)
         if audit_checkpoint is not None:
             pd.DataFrame(audit_rows).to_csv(audit_checkpoint, index=False)
+        checkpoint_dirty = False
 
     start_time = time.time()
     for row_index, context in enumerate(contexts):
@@ -676,6 +712,7 @@ def compute_kernel_shap(
         expected_values[row_index] = base
         model_outputs[row_index] = output
         completed_mask[row_index] = True
+        checkpoint_dirty = True
         audit_rows.append(
             {
                 "context_id": context["context_id"],

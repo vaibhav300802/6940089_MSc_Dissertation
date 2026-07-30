@@ -1,0 +1,7 @@
+2026-07-29 23:34:05,740 INFO Loaded central settings from C:\6940089_Apprajit_Vaibhav_Manikandan\MSc_Data_Science_Dissertation\config\pipeline_config.json
+2026-07-29 23:34:05,741 INFO Seed report: {"python_random_seed": 42, "numpy_random_seed": 42, "pythonhashseed": "42", "torch_available": true, "torch_seed": 42, "deterministic_torch_requested": false, "deterministic_torch_applied": false, "limitations": ["GPU kernels, data-loader workers, and external solver implementations may still introduce small non-determinism."]}
+2026-07-29 23:34:05,741 INFO Running smoke-test mode
+2026-07-29 23:34:05,742 INFO Starting stage command for smoke-test: C:\6940089_Apprajit_Vaibhav_Manikandan\MSc_Data_Science_Dissertation\venv\Scripts\python.exe -m unittest discover -s tests
+2026-07-29 23:34:21,325 INFO Completed stage command for smoke-test
+2026-07-29 23:34:23,714 INFO Run summary written to C:\6940089_Apprajit_Vaibhav_Manikandan\MSc_Data_Science_Dissertation\outputs\run_summaries\run_summary_20260729_233402.json
+2026-07-29 23:34:23,714 INFO Log file written to C:\6940089_Apprajit_Vaibhav_Manikandan\MSc_Data_Science_Dissertation\outputs\logs\pipeline_20260729_233402.log

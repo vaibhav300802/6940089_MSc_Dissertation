@@ -1,0 +1,2 @@
+forecast_target,n_rows,p10_p90_coverage,average_interval_width,median_absolute_error,quantile_crossing_rate
+incomplete_decision_to_admit,16848,0.8785612535612536,861.548646562792,56.54217529296875,0.0
