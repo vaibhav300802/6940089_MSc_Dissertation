@@ -41,17 +41,19 @@ AUTHOR_NAME = "APPRAJIT VAIBHAV MANIKANDAN"
 PROJECT_TITLE = "NHS RTT WAITING LIST FORECASTING"
 PROJECT_SUBTITLE = (
     "RTT means referral-to-treatment: people waiting to start consultant-led care after referral. "
-    "This dashboard uses NHS England RTT data from October 2015 onward to forecast waiting-list size, "
-    "inspect model signals, and test additional treatment-capacity scenarios."
+    "This dashboard turns NHS England RTT data from October 2015 onward into a calibrated 12-month "
+    "forecast for every Trust and specialty in England, explains what is driving each forecast, tests "
+    "how additional theatre capacity could reduce the backlog, and simulates how a new pandemic-style "
+    "disruption would affect it, all without needing to write any code."
 )
 PAGE_LABELS = ["Overview", "Hospital profile", "Forecast drivers", "Capacity test", "Pandemic test", "Model check"]
 PAGE_DISPLAY_LABELS = {
     "Overview": "OVERVIEW",
     "Hospital profile": "HOSPITAL PROFILE",
-    "Forecast drivers": "MODEL SIGNALS",
+    "Forecast drivers": "FORECAST DRIVERS",
     "Capacity test": "CAPACITY TEST",
-    "Pandemic test": "PANDEMIC SCENARIO",
-    "Model check": "MODEL CHECK",
+    "Pandemic test": "PANDEMIC SIMULATION",
+    "Model check": "MODEL COMPARISON",
 }
 
 st.set_page_config(
@@ -624,7 +626,7 @@ def observed_line_color() -> str:
 
 
 def map_style() -> str:
-    return "carto-positron"
+    return "open-street-map"
 
 
 def panel_color() -> str:
@@ -1309,8 +1311,8 @@ def sidebar_filters(
     forecast: pd.DataFrame,
     capacity_config: Mapping[str, object],
 ) -> tuple[str, DashboardFilters]:
-    st.sidebar.markdown("## NHS RTT WAITING LISTS")
-    dark_mode = st.sidebar.toggle("Dark view", value=bool(st.session_state.get("dark_mode", False)))
+    st.sidebar.markdown("## NHS RTT DECISION SUPPORT")
+    dark_mode = st.sidebar.toggle("Dark Mode", value=bool(st.session_state.get("dark_mode", False)))
     st.session_state["dark_mode"] = dark_mode
     apply_theme(dark_mode)
     if "page" not in st.session_state:
@@ -1404,11 +1406,11 @@ def make_location_map(forecast: pd.DataFrame, coordinates: pd.DataFrame, filters
             lon=map_data["longitude"],
             mode="markers",
             marker=dict(
-                size=np.clip(np.sqrt(map_data[filters.scenario_column].clip(lower=0.0)) / 13.0, 6, 25),
+                size=np.clip(np.sqrt(map_data[filters.scenario_column].clip(lower=0.0)) / 13.0, 8, 28),
                 color=map_data[filters.scenario_column],
                 colorscale="Blues",
                 showscale=False,
-                opacity=0.82,
+                opacity=0.95,
             ),
             text=map_data["hospital_display_name"],
             customdata=map_data[
@@ -1976,7 +1978,7 @@ def render_deep_dive(forecast: pd.DataFrame, historical: pd.DataFrame, filters: 
 
 
 def render_model_performance(filters: DashboardFilters) -> None:
-    st.title("MODEL CHECK")
+    st.title("MODEL COMPARISON")
     section_copy(
         "The TCN is compared with simpler forecasting baselines using the same held-out forecast rows. "
         "Lower error values indicate closer forecasts."
@@ -2071,7 +2073,7 @@ def find_shap_waterfall(
 
 
 def render_explainability(forecast: pd.DataFrame, filters: DashboardFilters) -> None:
-    st.title("MODEL SIGNALS")
+    st.title("FORECAST DRIVERS")
     section_copy(
         "These views show which recorded history was used most strongly by the forecasting model. "
         "They describe model behaviour and should not be read as proof of cause."
@@ -2080,7 +2082,7 @@ def render_explainability(forecast: pd.DataFrame, filters: DashboardFilters) -> 
     group_importance = load_csv(str(PATHS.shap_group_importance))
     local_explanations = load_parquet(str(PATHS.shap_local_explanations))
     if not local_explanations.empty:
-        st.subheader("HOSPITAL EXPLANATION")
+        st.subheader("EXPLAIN A HOSPITAL'S FORECAST")
         section_copy("The hospital list contains the cases for which local model explanations were generated.")
         filters = page_hospital_specialty_filters(
             local_explanations,
@@ -2404,7 +2406,7 @@ def render_capacity_optimisation(optimisation_forecast: pd.DataFrame, filters: D
     st.plotly_chart(apply_chart_style(fig), use_container_width=True, config=PLOTLY_CONFIG)
 
 def render_pandemic_pressure_test(forecast: pd.DataFrame, historical: pd.DataFrame) -> None:
-    st.title("PANDEMIC-TYPE SCENARIO")
+    st.title("PANDEMIC SIMULATION")
     section_copy(
         "A new pandemic-type disruption is applied from the start of the current 12-month forecast. "
         "Recent observed activity is used as the baseline, then the sliders test how waiting lists might move under disruption and recovery assumptions."
