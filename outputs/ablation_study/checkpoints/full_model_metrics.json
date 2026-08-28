@@ -1,0 +1,8 @@
+{
+  "n_rows": 36540,
+  "mae_median": 399.4225485539462,
+  "rmse_median": 785.1670790782239,
+  "pinball_mean": 175.22763167703417,
+  "p10_p90_coverage": 0.9152983032293377,
+  "best_val_loss": NaN
+}
