@@ -373,7 +373,7 @@ def detect_project_root() -> Path:
         return package_project_root
 
     for candidate in [Path.cwd(), Path.cwd().parent, Path("/content/nhs_rtt_msc_project"), Path("/content")]:
-        if (candidate / "nhs_rtt_pipeline").exists() or (candidate / "colab_notebooks").exists():
+        if (candidate / "nhs_rtt_pipeline").exists() or (candidate / "project_notebooks").exists():
             return candidate.resolve()
     return Path("/content").resolve()
 

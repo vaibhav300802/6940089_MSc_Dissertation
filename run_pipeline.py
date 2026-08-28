@@ -154,7 +154,7 @@ def execute_stage(stage: str, base_env: Mapping[str, str] | None = None) -> list
         )
     elif stage == "prepare":
         run_command(
-            [sys.executable, "colab_notebooks/layer1_nhs_rtt_tcn_colab.py"],
+            [sys.executable, "project_notebooks/layer1_nhs_rtt_tcn.py"],
             stage,
             merge_env(base_env, {"NHS_RTT_LAYER1_STAGE": "prepare"}),
         )
@@ -174,7 +174,7 @@ def execute_stage(stage: str, base_env: Mapping[str, str] | None = None) -> list
         )
     elif stage in LAYER1_MODEL_STAGES:
         run_command(
-            [sys.executable, "colab_notebooks/layer1_nhs_rtt_tcn_colab.py"],
+            [sys.executable, "project_notebooks/layer1_nhs_rtt_tcn.py"],
             stage,
             merge_env(base_env, {"NHS_RTT_LAYER1_STAGE": stage}),
         )
@@ -198,7 +198,7 @@ def execute_stage(stage: str, base_env: Mapping[str, str] | None = None) -> list
             ]
         )
     elif stage == "explain":
-        run_command([sys.executable, "colab_notebooks/layer2_nhs_rtt_tcn_shap_colab.py"], stage, merge_env(base_env))
+        run_command([sys.executable, "project_notebooks/layer2_nhs_rtt_tcn_shap.py"], stage, merge_env(base_env))
         produced.extend(
             [
                 str(PATHS.shap_values),
@@ -208,7 +208,7 @@ def execute_stage(stage: str, base_env: Mapping[str, str] | None = None) -> list
             ]
         )
     elif stage == "optimise":
-        run_command([sys.executable, "colab_notebooks/layer3_nhs_rtt_lp_optimisation_colab.py"], stage, merge_env(base_env))
+        run_command([sys.executable, "project_notebooks/layer3_nhs_rtt_lp_optimisation.py"], stage, merge_env(base_env))
         produced.extend(
             [
                 str(PATHS.lp_allocation_output),
@@ -219,7 +219,7 @@ def execute_stage(stage: str, base_env: Mapping[str, str] | None = None) -> list
             ]
         )
     elif stage == "rolling_origin":
-        run_command([sys.executable, "colab_notebooks/layer1c_nhs_rtt_rolling_origin_validation_colab.py"], stage, merge_env(base_env))
+        run_command([sys.executable, "project_notebooks/layer1c_nhs_rtt_rolling_origin_validation.py"], stage, merge_env(base_env))
         produced.extend(
             [
                 str(PATHS.rolling_origin_predictions),
@@ -237,7 +237,7 @@ def execute_stage(stage: str, base_env: Mapping[str, str] | None = None) -> list
             ]
         )
     elif stage == "covid_shock":
-        run_command([sys.executable, "colab_notebooks/layer1b_nhs_rtt_covid_shock_experiment_colab.py"], stage, merge_env(base_env))
+        run_command([sys.executable, "project_notebooks/layer1b_nhs_rtt_covid_shock_experiment.py"], stage, merge_env(base_env))
         produced.extend(
             [
                 str(PATHS.covid_predictions),

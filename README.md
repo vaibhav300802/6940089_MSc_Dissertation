@@ -14,12 +14,13 @@ nhs_rtt_msc_project/
   run_pipeline.py
   download_rtt_data.py
   validate_project.py
-  colab_notebooks/
-    layer1_nhs_rtt_tcn_colab.ipynb
-    layer1c_nhs_rtt_rolling_origin_validation_colab.ipynb
-    layer1b_nhs_rtt_covid_shock_experiment_colab.ipynb
-    layer2_nhs_rtt_tcn_shap_colab.ipynb
-    layer3_nhs_rtt_lp_optimisation_colab.ipynb
+  project_notebooks/
+    layer1_nhs_rtt_tcn.ipynb
+    layer1c_nhs_rtt_rolling_origin_validation.ipynb
+    layer1b_nhs_rtt_covid_shock_experiment.ipynb
+    layer1d_nhs_rtt_ablation_study.ipynb
+    layer2_nhs_rtt_tcn_shap.ipynb
+    layer3_nhs_rtt_lp_optimisation.ipynb
   nhs_rtt_pipeline/
     config.py
     data_quality.py
@@ -142,11 +143,11 @@ all
 
 The notebook route is:
 
-1. `colab_notebooks/layer1_nhs_rtt_tcn_colab.ipynb`
-2. Rolling-origin validation: `python run_pipeline.py rolling_origin` or `colab_notebooks/layer1c_nhs_rtt_rolling_origin_validation_colab.ipynb`
-3. COVID shock experiment: `python run_pipeline.py covid_shock` or `colab_notebooks/layer1b_nhs_rtt_covid_shock_experiment_colab.ipynb`
-4. `colab_notebooks/layer2_nhs_rtt_tcn_shap_colab.ipynb`
-5. `colab_notebooks/layer3_nhs_rtt_lp_optimisation_colab.ipynb`
+1. `project_notebooks/layer1_nhs_rtt_tcn.ipynb`
+2. Rolling-origin validation: `python run_pipeline.py rolling_origin` or `project_notebooks/layer1c_nhs_rtt_rolling_origin_validation.ipynb`
+3. COVID shock experiment: `python run_pipeline.py covid_shock` or `project_notebooks/layer1b_nhs_rtt_covid_shock_experiment.ipynb`
+4. `project_notebooks/layer2_nhs_rtt_tcn_shap.ipynb`
+5. `project_notebooks/layer3_nhs_rtt_lp_optimisation.ipynb`
 6. `python validate_project.py`
 7. `python dashboard/startup_validation.py`
 8. `streamlit run dashboard/app.py`
@@ -513,7 +514,7 @@ All baseline feature construction uses observations no later than each forecast 
 
 ## Layer 1C Rolling-Origin Validation
 
-`colab_notebooks/layer1c_nhs_rtt_rolling_origin_validation_colab.ipynb` performs rolling-origin backtesting with multiple forecast origins. For each origin it:
+`project_notebooks/layer1c_nhs_rtt_rolling_origin_validation.ipynb` performs rolling-origin backtesting with multiple forecast origins. For each origin it:
 
 - fits feature scalers using that fold's training period only;
 - trains a fresh custom PyTorch TCN using targets that end before the forecast origin;
@@ -575,7 +576,7 @@ The summary report states whether the nominal 80% P10-P90 interval is close to e
 
 ## Layer 1B COVID Shock Forecasting Experiment
 
-`colab_notebooks/layer1b_nhs_rtt_covid_shock_experiment_colab.ipynb` is a separate experiment, not the production forecasting pipeline. It trains stress-test models using only pre-COVID behaviour and evaluates performance during the COVID elective-care disruption.
+`project_notebooks/layer1b_nhs_rtt_covid_shock_experiment.ipynb` is a separate experiment, not the production forecasting pipeline. It trains stress-test models using only pre-COVID behaviour and evaluates performance during the COVID elective-care disruption.
 
 The default split is:
 
